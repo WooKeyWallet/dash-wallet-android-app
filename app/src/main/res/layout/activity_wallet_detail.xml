@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/assetTitle"
+            style="@style/text_14_8D8D8D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/asset"
+            style="@style/text_25_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/rate"
+            style="@style/text_14_9E9E9E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="25dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="25dp"
+            android:background="@color/color_DEDEDE" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_F6F6F6" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/walletName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            app:sBottomDividerLineMarginLeft="25dp"
+            app:sDividerLineColor="@color/color_DEDEDE"
+            app:sDividerLineHeight="1px"
+            app:sLeftTextColor="@color/color_333333"
+            app:sLeftTextSize="@dimen/text_size_16"
+            app:sLeftTextString="@string/wallet_name"
+            app:sLeftViewGravity="left_center"
+            app:sLeftViewMarginLeft="25dp"
+            app:sRightTextColor="@color/color_9E9E9E"
+            app:sRightTextSize="@dimen/text_size_14"
+            app:sRightViewGravity="right_center"
+            app:sRightViewMarginRight="25dp"
+            app:sUseRipple="false" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            app:sDividerLineColor="@color/color_DEDEDE"
+            app:sDividerLineHeight="1px"
+            app:sLeftTextColor="@color/color_333333"
+            app:sLeftTextSize="@dimen/text_size_16"
+            app:sLeftTextString="@string/address_setting"
+            app:sLeftViewGravity="left_center"
+            app:sLeftViewMarginLeft="25dp"
+            app:sRightIconMarginRight="25dp"
+            app:sRightIconRes="@drawable/arrow_right"
+            app:sRightTextColor="@color/color_9E9E9E"
+            app:sRightTextSize="@dimen/text_size_14"
+            app:sUseRipple="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_F6F6F6" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/passwordPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            app:sBottomDividerLineMarginLeft="25dp"
+            app:sDividerLineColor="@color/color_DEDEDE"
+            app:sDividerLineHeight="1px"
+            app:sLeftTextColor="@color/color_333333"
+            app:sLeftTextSize="@dimen/text_size_16"
+            app:sLeftTextString="@string/password_prompt"
+            app:sLeftViewGravity="left_center"
+            app:sLeftViewMarginLeft="25dp"
+            app:sRightIconMarginRight="25dp"
+            app:sRightIconRes="@drawable/arrow_right"
+            app:sUseRipple="false" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/backupMnemonic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            app:sBottomDividerLineMarginLeft="25dp"
+            app:sDividerLineColor="@color/color_DEDEDE"
+            app:sDividerLineHeight="1px"
+            app:sLeftTextColor="@color/color_333333"
+            app:sLeftTextSize="@dimen/text_size_16"
+            app:sLeftTextString="@string/backup_mnemonic"
+            app:sLeftViewGravity="left_center"
+            app:sLeftViewMarginLeft="25dp"
+            app:sRightIconMarginRight="25dp"
+            app:sRightIconRes="@drawable/arrow_right"
+            app:sUseRipple="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_F6F6F6" />
+
+        <TextView
+            android:id="@+id/delete"
+            style="@style/text_16_333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/delete_wallet" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_DEDEDE" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

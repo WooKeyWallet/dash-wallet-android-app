@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_receive"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contentTitle"
+            style="@style/text_16_FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <ImageView
+            android:id="@+id/QRCode"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/amountSet"
+            style="@style/text_14_2179FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/amount_set" />
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/text_20_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rate"
+            style="@style/text_14_9E9E9E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="6dp"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/addressBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/text_12_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.4" />
+
+            <ImageView
+                android:id="@+id/copyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/icon_copy_bold" />
+
+            <ImageView
+                android:id="@+id/switchAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/copyAddress"
+                android:src="@drawable/icon_switch_address" />
+
+            <ImageView
+                android:id="@+id/visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/switchAddress"
+                android:src="@drawable/icon_visible_space" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/prompt"
+            style="@style/text_12_FF3A5C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
